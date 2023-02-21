@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Righteous";
+  src: url("../fonts/Righteous-Regular.ttf");
+}
+@font-face {
+  font-family: "Itim";
+  src: url(../fonts/Itim-Regular.ttf);
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+.open-span {
+  font-size: 1.1em;
+  color: #003049;
+  font-weight: 900;
+}
+.bd-title {
+  letter-spacing: 7px;
+  top: -20vh;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hbd-text {
+  font-family: "Righteous";
+}
+.mysister {
+  font-family: "Itim";
+  letter-spacing: 0.2em;
+  text-align: end;
+  color: #ff0054;
+}
+
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  height: 100vh;
+  overflow: hidden;
+}
+.space-div {
+  height: 30vh;
+}
+.gitbox-div {
+  width: 100vw;
+}
+
+/* .fade {
+  opacity: 0;
+} */
+.fadeIn {
+  animation: fadeIn 4s linear forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeOut {
+  animation: fadeOut 2s linear forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.color-balloon {
+  position: fixed;
+  padding: 0;
+}
+.hide-playme {
+  display: none !important;
+}
+#bd_cake_gif {
+  position: fixed;
+  top: -70vh;
+}
+#color_balloon_1 {
+  max-width: 100px;
+  left: 0vw;
+  bottom: -40vh;
+}
+#color_balloon_2 {
+  max-width: 100px;
+  right: 10vw;
+  bottom: -40vh;
+}
+#color_balloon_3 {
+  max-width: 100px;
+  right: 25vw;
+  bottom: -40vh;
+}
+#color_balloon_4 {
+  max-width: 150px;
+  left: -15vw;
+  bottom: -40vh;
+}
+#color_balloon_5 {
+  max-width: 100px;
+  right: 0vw;
+  bottom: -40vh;
+}
+#color_balloon_6 {
+  max-width: 100px;
+  left: 25vw;
+  bottom: -40vh;
+}
+#bd_balloon {
+  display: none;
+  bottom: -65vh;
+  max-width: 500px;
+  position: fixed;
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.surprise-btn {
+  width: 7rem;
+  white-space: set;
+  position: fixed;
+  top: -20vh;
+}
+.heart-giftbox {
+  animation: tilt-n-move-shaking 0.7s infinite;
+}
+.bd-wish-btn {
+  white-space: set;
+  width: 7rem;
+  position: fixed;
+  top: 148vh;
+  display: none;
+  background: none !important;
+  border: none !important;
+}
+.bd-parcel {
+  animation: tilt-shaking 0.6s infinite;
+}
+.surprise-btn,
+.bd-wish-btn {
+  display: none;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+.img-div {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.pointing-hand {
+  display: none;
+  position: fixed;
+  top: 28vh;
+  margin-left: 10px;
+}
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bd-cake-gif {
+    width: 30vw;
+  }
+  .video-div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+}

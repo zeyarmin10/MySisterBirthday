@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <audio
+        src="./music/happy-birthday-to-you-dance-20919.mp3"
+        id="my_audio"
+        loop="loop"
+      ></audio>
+      <div class="space-div"></div>
+      <div class="row d-flex justify-content-center play-btn">
+        <div class="col-3 col-sm-3"></div>
+        <div class="d-flex justify-content-center gitbox-div mt-5">
+          <button
+            type="button"
+            class="btn mt-3 gift-yellow"
+            onclick="playMusic()"
+          >
+            <img
+              src="./images/gift-box-yellow.png"
+              alt="Gift Box"
+              width="150"
+            />
+          </button>
+        </div>
+        <div class="col-3 col-sm-3 text-center mt-3 open-span">
+          <span>Open it!</span>
+        </div>
+      </div>
+      <div class="space-div"></div>
+      <div class="row bd-title">
+        <p class="mt-5 hbd-text">HAPPY BIRTHDAY</p>
+        <span class="mysister">Beloved Sister</span>
+      </div>
+      <div class="row d-flex justify-content-center img-div">
+        <!-- <embed src="./music/happy-birthday-to-you-dance-20919.mp3" loop="true" autostart="true" width="2" height="0"> -->
+        <div class="row mt-5"></div>
+        <img
+          src="./images/happybirthdayGIF-noBG.gif"
+          alt="animated gif"
+          class="bd-cake-gif img-fluid"
+          id="bd_cake_gif"
+        />
+        <img
+          src="./images/colorful-balloon-1.png"
+          alt="balloon-1"
+          class="color-balloon img-fluid"
+          id="color_balloon_1"
+        />
+        <img
+          src="./images/colorful-balloon-2.png"
+          alt="balloon-2"
+          class="color-balloon img-fluid"
+          id="color_balloon_2"
+        />
+        <img
+          src="./images/colorful-balloon-3.png"
+          alt="balloon-3"
+          class="color-balloon img-fluid"
+          id="color_balloon_3"
+        />
+        <img
+          src="./images/colorful-balloon-4.png"
+          alt="balloon-4"
+          class="color-balloon img-fluid"
+          id="color_balloon_4"
+        />
+        <img
+          src="./images/colorful-balloon-5.png"
+          alt="balloon-5"
+          class="color-balloon img-fluid"
+          id="color_balloon_5"
+        />
+        <img
+          src="./images/colorful-balloon-6.png"
+          alt="balloon-6"
+          class="color-balloon img-fluid"
+          id="color_balloon_6"
+        />
+      </div>
+      <div
+        class="col-sm-12 col-md-12 col-lg-12mt-5"
+        style="display: flex; justify-content: center; align-items: flex-start"
+      >
+        <button
+          type="button"
+          class="btn surprise-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModalFullscreen"
+          onclick="pauseMusic()"
+        >
+          <img
+            class="heart-giftbox"
+            src="./images/giftbox.png"
+            alt="gift box"
+            width="85"
+            height="85"
+          />
+          <!-- <img
+            src="./images/pointing-hand.png"
+            alt="point Finger"
+            width="40"
+            height="40"
+            style="margin-top: 5px"
+          /> -->
+        </button>
+        <!-- <span class="pointing-hand"></span> -->
+      </div>
+      <div
+        class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center mt-5 bd-balloon"
+      >
+        <img
+          src="./images/HB-colorful-balloon-2.png"
+          alt="Birthday Balloon"
+          class="img-fluid bd-balloon"
+          id="bd_balloon"
+        />
+        <button type="button" class="btn btn-success bd-wish-btn">
+          <!-- <img
+            src="./images/pointing-hand-down.png"
+            alt="point Finger"
+            width="40"
+            height="40"
+            style="margin-bottom: 5px"
+          /> -->
+          <a href="./BelovedSisterCard/belovedsister.html" style="padding: 10px"
+            ><img
+              class="bd-parcel"
+              src="./images/best-wishes.png"
+              alt="birthday wishes"
+              width="60"
+              height="60"
+          /></a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalFullscreen"
+      tabindex="-1"
+      aria-labelledby="exampleModalFullscreenLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title h4" id="exampleModalFullscreenLabel">
+              Surprise Video
+            </h5>
+            <!-- <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button> -->
+          </div>
+          <div class="modal-body mt-5">
+            <h4 style="text-align: center">Happy Birthday To You</h4>
+            <div class="row d-flex justify-content-center mt-5">
+              <video width="100%" controls="false" id="myvideo" loop>
+                <source src="./videos/" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="col-sm-12 d-flex justify-content-center mt-5">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                  onclick="playMusic()"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
