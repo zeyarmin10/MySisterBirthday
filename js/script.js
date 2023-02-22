@@ -13,7 +13,7 @@ let surpriseVideo = document.querySelector("#myvideo");
 let pointingFinger = document.querySelector(".pointing-hand");
 let openSpan = document.querySelector(".open-span");
 
-let bdCakeTop = -30;
+let bdCakeBot = 130;
 let bottom1 = -30;
 let left1 = -5;
 let right2 = 0;
@@ -52,10 +52,10 @@ function playMusic() {
   // bd cake
   setTimeout(() => {
     setInterval(() => {
-      if (bdCakeTop <= 50) {
-        bdCakeTop += 1;
+      if (bdCakeBot > 9) {
+        bdCakeBot -= 1;
       }
-      bdcake.style.top = `${bdCakeTop}vh`;
+      bdcake.style.bottom = `${bdCakeBot}vh`;
     }, 50);
   }, 2000);
 
@@ -166,12 +166,12 @@ function playMusic() {
   // bd balloon
   setTimeout(() => {
     setInterval(() => {
-      if (bdBalloonBot > -50) {
+      if (bdBalloonBot > -500) {
         bdBalloonBot -= 1;
       }
       bdball.style.top = `${bdBalloonBot}vh`;
     }, 50);
-  }, 12500);
+  }, 11000);
 
   //bd wish btn
   setTimeout(() => {
@@ -181,7 +181,7 @@ function playMusic() {
       }
       bdWishBtn.style.top = `${bdWishBtnBot}vh`;
     }, 50);
-  }, 12500);
+  }, 11000);
 }
 // window.onload=function(){
 //   document.getElementById("my_audio").play();

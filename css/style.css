@@ -84,7 +84,7 @@ body {
 }
 #bd_cake_gif {
   position: fixed;
-  top: -70vh;
+  bottom: 130vh;
 }
 #color_balloon_1 {
   max-width: 100px;
