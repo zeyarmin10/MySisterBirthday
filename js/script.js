@@ -61,7 +61,6 @@ function playMusic() {
 
   // balloon 1
   setTimeout(() => {
-    // if(ball1.style.bottom == "-30vh") {
     setInterval(() => {
       if (bottom1 < 125) {
         bottom1 += 1;
@@ -161,7 +160,7 @@ function playMusic() {
       }
       bdTitle.style.top = `${bdtitleTop}vh`;
     }, 40);
-  }, 11000);
+  }, 10500);
 
   // bd balloon
   setTimeout(() => {
@@ -171,7 +170,7 @@ function playMusic() {
       }
       bdball.style.top = `${bdBalloonBot}vh`;
     }, 50);
-  }, 11000);
+  }, 10500);
 
   //bd wish btn
   setTimeout(() => {
@@ -183,9 +182,6 @@ function playMusic() {
     }, 50);
   }, 11000);
 }
-// window.onload=function(){
-//   document.getElementById("my_audio").play();
-// }
 
 const pauseMusic = () => {
   let bdMusic = document.getElementById("my_audio");
