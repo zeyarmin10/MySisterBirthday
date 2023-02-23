@@ -29,7 +29,7 @@ let left6 = 0;
 let bdtitleTop = -20;
 let surpriseBtnTop = -20;
 let bdBalloonBot = 160;
-let bdWishBtnBot = 200;
+let bdWishBtnBot = 190;
 
 function playMusic() {
   document.querySelector(".gift-yellow").classList.add("fadeOut");
