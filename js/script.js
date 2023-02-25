@@ -156,7 +156,7 @@ function playMusic() {
   //bd title
   setTimeout(() => {
     setInterval(() => {
-      if (bdtitleTop < 4) {
+      if (bdtitleTop < 5) {
         bdtitleTop += 1;
       }
       bdTitle.style.top = `${bdtitleTop}vh`;

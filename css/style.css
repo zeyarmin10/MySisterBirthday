@@ -18,22 +18,32 @@ body {
   font-weight: 900;
 }
 .bd-title {
+  margin: 1em 0 0 0 !important;
+  padding: 0;
   letter-spacing: 7px;
   top: -20vh;
   position: fixed;
   left: 0;
   width: 100%;
   text-align: center;
+  animation: fadeInLoop 1s infinite alternate;
 }
-
+@keyframes fadeInLoop {
+  from {
+    opacity: 0;
+  }
+}
 .hbd-text {
   font-family: "Righteous";
+  font-size: 1.5em;
+  margin-bottom: 1rem;
 }
 .mysister {
   font-family: "Itim";
   letter-spacing: 0.2em;
   text-align: end;
   color: #ff0054;
+  font-size: 1.25em;
 }
 
 .container {
@@ -186,6 +196,12 @@ button a {
   position: fixed;
   top: 28vh;
   margin-left: 10px;
+}
+.hbd-to-u {
+  font-size: 1.85em;
+  color: #219ebc;
+  font-family: "Itim";
+  animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
 }
 video {
   padding: 0 !important;
