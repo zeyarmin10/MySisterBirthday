@@ -33,6 +33,7 @@ let bdWishBtnBot = 190;
 
 function playMusic() {
   document.querySelector(".gift-yellow").classList.add("fadeOut");
+  document.querySelector(".open-span").classList.add("fadeOut");
   let bdMusic = document.getElementById("my_audio").play();
   surpriseVideo.pause();
   surpriseVideo.currentTime = 0;

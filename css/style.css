@@ -48,12 +48,18 @@ body {
 .gitbox-div {
   width: 100vw;
 }
-
+.gift-yellow:focus,
+.gift-yellow:active {
+  outline: none !important;
+}
 /* .fade {
   opacity: 0;
 } */
 .fadeIn {
   animation: fadeIn 4s linear forwards;
+}
+.fadeIn:focus {
+  border: none !important;
 }
 @keyframes fadeIn {
   0% {
@@ -132,8 +138,17 @@ body {
   position: fixed;
   top: -20vh;
 }
+.surprise-btn:focus,
+.gift-yellow:active {
+  border: none !important;
+  outline: none !important;
+}
 .heart-giftbox {
-  animation: tilt-n-move-shaking 0.7s infinite;
+  /* animation: tilt-n-move-shaking 0.7s infinite; */
+  animation: shake 1.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 .bd-wish-btn {
   white-space: set;
@@ -143,6 +158,12 @@ body {
   display: none;
   background: none !important;
   border: none !important;
+  outline: none !important;
+}
+.bd-wish-btn:focus,
+.gift-yellow:active {
+  border: none !important;
+  outline: none !important;
 }
 .bd-parcel {
   animation: tilt-shaking 0.6s infinite;
@@ -165,6 +186,9 @@ button a {
   position: fixed;
   top: 28vh;
   margin-left: 10px;
+}
+video {
+  padding: 0 !important;
 }
 @keyframes tilt-n-move-shaking {
   0% {
@@ -198,6 +222,29 @@ button a {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
 
