@@ -27,6 +27,7 @@ body {
   width: 100%;
   text-align: center;
   animation: fadeInLoop 1s infinite alternate;
+  animation: glow 1.5s linear infinite;
 }
 @keyframes fadeInLoop {
   from {
@@ -261,6 +262,15 @@ video {
   40%,
   60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
   }
 }
 

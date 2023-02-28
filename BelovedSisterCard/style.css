@@ -8,6 +8,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: #073b4c;
+  overflow: hidden;
 }
 p {
   font-family: "Pyidaungsu";
@@ -155,13 +156,13 @@ p {
 
 .name {
   position: absolute;
-  left: 10vw;
+  left: 5vw;
   bottom: 20px;
   color: #333;
   font-size: 0.77rem;
-  margin-left: 20%;
+  /* margin-left: 20%; */
   margin-top: 30px;
-  text-align: end;
+  text-align: end !important;
 }
 
 .back {
@@ -173,12 +174,23 @@ p {
   outline-style: dotted;
 }
 .btn-back {
-  position: absolute;
-  bottom: 10vh;
+  position: fixed;
+  bottom: 7.5vh;
   background: transparent;
+  width: 3rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .back-arrow {
     width: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .name {
+    left: 15vw;
+  }
+  .back-arrow {
+    width: 3rem;
+    /* position: fixed; */
+    /* bottom: 8vh; */
   }
 }
